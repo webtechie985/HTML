@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>16MIS0121 LAB Assesment2</title>
+<script type="text/javascript">
+function UpdateCost() {
+  var sum = 0;
+  var b, elem;
+  for (i=0; i<5; i++) {
+    b = 'book'+i;
+    elem = document.getElementById(b);
+    if (elem.checked == true) { sum += Number(elem.value); }
+  }
+  document.getElementById('totalcost').value = sum.toFixed(2);
+}
+</script>
+</head>
+<body align="center">
+  <h1>Total Cost of Books</h1><br>
+<input type="checkbox" id='book0' value="100"  onclick="UpdateCost()">Book 1 (Rs.100/-)<br>
+<input type="checkbox" id='book1' value="120" onclick="UpdateCost()">Book 2 (Rs.120/-)<br>
+<input type="checkbox" id='book2' value="170" onclick="UpdateCost()">Book 3 (Rs.170/-)<br>
+<input type="checkbox" id='book3' value="220" onclick="UpdateCost()">Book 4 (Rs.220/-)<br>
+<input type="checkbox" id='book4' value="350" onclick="UpdateCost()">Book 5 (Rs.350/-)<br>
+<br>
+<input type="text" id='totalcost'>
+</body>
+</html>

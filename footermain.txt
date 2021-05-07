@@ -1,0 +1,83 @@
+<footer>
+
+   <div class="container-footer-all">
+
+        <div class="container-body">
+
+            <div class="colum1">
+                <h1>More information About VITxplore</h1>
+
+                <p>This Website is developed to help <b>VITians</b> by giving regular updates about the events and sharing useful information to <b>VITians</b>.</p>
+
+            </div>
+
+            <div class="colum2">
+
+                <h1>Social Networks</h1>
+
+                <div class="row">
+                    <a href="https://www.facebook.com/"><img src="http://vitxplore.ga/facebook.png"></a>
+                    <label>Follow us on Facebook</label>
+                </div>
+                <div class="row">
+                    <a href="https://www.facebook.com/"><img src="http://vitxplore.ga/twitter.png"></a>
+                    <label>Follow us on Twitter</label>
+                </div>
+                <div class="row">
+                    <a href="https://www.facebook.com/"><img src="http://vitxplore.ga/instagram.png"></a>
+                    <label>Follow us on Instagram</label>
+                </div>
+                <div class="row">
+                    <a href="https://www.facebook.com/"><img src="http://vitxplore.ga/google-plus.png"></a>
+                    <label>Follow us on Google Plus</label>
+                </div>
+                <div class="row">
+                    <a href="https://www.facebook.com/"><img src="http://vitxplore.ga/whatsapp.png"></a>
+                    <label>Message us on Whatsapp</label>
+                </div>
+
+
+            </div>
+
+            <div class="colum3">
+
+                <h1>Information Contacts</h1>
+
+                <div class="row2">
+                    <img src="http://vitxplore.ga/house.png">
+                    <label>VIT University,
+                    Vellore,
+                    Tamilnadu,
+                    632014.</label>
+                </div>
+
+                <div class="row2">
+                    <img src="http://vitxplore.ga/smartphone.png">
+                    <label>+919154144125</label>
+                </div>
+
+                <div class="row2">
+                    <img src="http://vitxplore.ga/contact.png">
+                     <label>vitxplore@gmail.com</label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container-footer">
+           <div class="footer">
+                <div class="copyright">
+                    © 2019 VITxplore | <a href="vitxplore">VITxplore</a>
+                </div>
+
+                <div class="information">
+                    <a href="">Website Information</a> | <a href="">Privacy policy</a> | <a href="">Terms and Conditions</a>
+                </div>
+            </div>
+
+        </div>
+
+</footer>

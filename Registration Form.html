@@ -1,0 +1,76 @@
+<html>
+<head>
+<title> Registration  Form
+</title>
+<style>
+th,td,h1{ font-size:20px; font-family: sans-serif;
+}
+</style>
+</head>
+<body >
+<body bgcolor="#1F618D"><h1 align="center"> STUDENT REGISTRATION FORM </h1><br/>
+<form name="myform" onsubmit="return validateform()" method="post" >
+<table align="center"  cellpadding="10" cellspacing="5">
+<tr>
+<td>Name:</td>
+<td>
+<input type="text" name="name" placeholder="Enter Name"/>  </td></tr>
+<tr>
+<td>Register Number:</td>
+<td>
+<input type="text" name="reg_number" placeholder="Registration Number"/>  </td></tr>
+<tr>
+<td>Date Of Birth:</td>
+<td> <input type="date" name="DOB" placeholder="Date of Birth" required/>  </td></tr>
+<tr>
+<td>Program:</td>
+<td> <input type="text" name="program" placeholder="Program" required />  </td></tr>
+<tr>
+<td>Email Id:</td>
+<td> <input type="email" name="email.id" placeholder="Email ID" required />  </td></tr>
+<tr>
+<td>Temporary address:</td>
+<td> <textarea rows="5" columns="50" id="temparary" placeholder="Temporary Address" required /></textarea>  </td></tr>
+<tr>
+<td>Permanent address:</td>
+<td> <textarea rows="5" columns="50" id="permanent" placeholder="Permanent Address" required/></textarea>  </td></tr>
+<tr><td colspan="2"><input type="checkbox" onclick="mycheck()" id="check" >I agree my temporary address as permanent address</td></tr>
+<tr>
+<td>Mobile Number:</td>
+<td> <input type="text" name="number" placeholder="Mobile Number" />  </td></tr>
+<tr>
+<td colspan="2" align="center"> <input type="submit" name="submit" value="submit"/>  </td></tr> </table>
+<p><span id="msg1" style="color:red;"></span></p>
+</form> <script>
+function validateform(){
+ 	var x=document.forms["myform"]["number"].value;
+
+ 	var y=document.forms["myform"]["reg_number"].value;  	var z=document.forms["myform"]["name"].value;  	nvali(x);  	rvali(y);  	pvali(z);
+
+}
+function mycheck() {
+
+ 	document.getElementById("permanent").innerHTML=document.getElementById("temparary").value;
+ 	document.getElementById("check").disabled=true;
+}
+
+function nvali(x){
+ 	var pattern1=/^[0-9]{10}$/;  	if(!x.match(pattern1)){
+
+ 	}
+
+}
+function rvali(y){
+ 	var pattern2=/^[a-zA-Z0-9]+$/;  	if(!y.match(pattern2)){  	alert("invalid reg number");
+ 	}
+ 	else{  	 	return true;
+ 	}
+}
+ 	function pvali(z){  	var pattern3=/^[a-zA-Z]{1,30}$/;  	if(!z.match(pattern3)){  	 	alert("name should not exceed 30");
+ 	}
+ 	else{  	 	return true;
+ 	}
+}
+</script>
+</body>
+</html>

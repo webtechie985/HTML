@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  body{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    width:90%;margin:auto;min-width:600px;max-width:2000px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(https://coloredbrain.com/wp-content/uploads/2016/07/login-background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+  form{
+    width:90%;margin:auto;min-width:600px;max-width:2000px
+  margin: 0;
+  padding: 0;
+  }
+  button{
+  width:auto;
+  background: none;
+  border: 2px solid #4caf50;
+  color: grey;
+  padding: 5px;
+  font-size: 18px;
+  font-family: sans-serif;
+  cursor: pointer;
+  margin: 12px 0;
+}
+.form-box{
+  width: 280px;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  color: white;
+}
+  </style>
+</head>
+<body>
+  <div class="form-box">
+<form id="form1">
+Name: <input name="name" type="text" size="20">
+</form><br>
+<button onclick="outputname()" >Submit</button>
+<script>
+function outputname() {
+var x,y,name,a,b,answer;
+x=document.getElementById("form1") ;
+y=x.elements["name"].value;
+document.getElementById("demo").innerHTML="Welcome "+y+"<br>";
+document.getElementById("demo").innerHTML+=y + " How's your day <br>";
+}
+</script>
+<p id="demo"></p>
+</div>
+</body>
+</html>

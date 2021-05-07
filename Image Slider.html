@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Slider</title>
+<style>
+@keyframes slider {
+
+0% {
+	left: 0;
+}
+
+20% {
+	left: 0;
+}
+
+25% {
+	left: -100%;
+}
+
+45% {
+    left: -100%;
+
+}
+
+50% {
+		left: -200%;
+
+}
+
+70% {
+	left: -200%;
+}
+
+75% {
+	left: -300%;
+}
+
+95% {
+	left: -300%;
+}
+
+100% {
+	left: -400%;
+
+}
+
+}
+
+#slider {
+	overflow: hidden;
+}
+
+#slider figure img {
+	width: 20%;
+	float: left;
+}
+
+#slider figure {
+	position: relative;
+	width: 500%;
+	margin: 0;
+	left: 0;
+	text-align: left;
+	font-size: 0;
+	animation: 20s slider infinite;
+
+}
+body {
+    width: 100%;
+}
+
+</style>
+</head>
+<body>
+<div id="slider" >
+<figure>
+<img src="https://images.unsplash.com/photo-1548820888-9008aafde4e5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+<img src="https://images.unsplash.com/photo-1548820524-7c4742f76035?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80">
+<img src="https://images.unsplash.com/photo-1548924607-fd498b796071?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
+<img src="https://images.unsplash.com/photo-1548978023-78e9b6b082fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1101&q=80">
+<img src="https://images.unsplash.com/photo-1548851643-07ca8c38f4ae?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1171&q=80">
+</figure>
+
+</div>
+
+</body>
+</html>

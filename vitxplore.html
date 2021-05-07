@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VIT Xplore</title>
+    <style>
+	*{
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+
+}
+body
+{width:100%;margin:auto;min-width:0px;max-width:2000px;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url("http://vitxplore.ga/v.jpg") no-repeat center center fixed;
+background-size: cover;
+}
+.header{
+  height: 100px;
+  background: #34495e;
+  padding: 0 20px;
+  color: #fff;
+}
+.logo{
+  line-height: 100px;
+  float: left;
+  text-transform: uppercase;
+}
+
+.menu{
+  float: right;
+  line-height: 100px;
+}
+.menu a{
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 0 10px;
+  transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+  transition: 0.4s;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+.show-menu-btn{
+  float: right;
+}
+.show-menu-btn i{
+  line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+  color: #3498db;
+}
+
+#chk{
+  position: absolute;
+  visibility: hidden;
+  z-index: -1111;
+}
+
+.content{
+  padding: 0 00px;
+}
+
+.content p{
+  text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+  .show-menu-btn,.hide-menu-btn{
+    display: block;
+  }
+  .menu{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    right: -100%;
+    top: 0;
+    text-align: center;
+    padding: 80px 0;
+    line-height: normal;
+    transition: 0.7s;
+  }
+  .menu a{
+    display: block;
+    padding: 20px;
+  }
+  .hide-menu-btn{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+  #chk:checked ~ .menu{
+    right: 0;
+  }
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+
+
+	</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+  </head>
+  <body>
+  <div class="header">
+    <h2 class="logo">VIT Xplore</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#">Home</a>
+      <a href="#">Resources</a>
+      <a href="#">VIT Clubs</a>
+      <a href="#">Updates</a>
+      <a href="http://vitxplore.ga/Aboutus.html">Contact us</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+<div class="content">
+    </div>
+    <div class="container">
+      <h1>VITxplore to
+        <span class="txt-type" data-wait="3000" data-words='["Explore", "Evolve", "Engage"]'></span>
+      </h1>
+      <h2>Welcome <b>VITians<b></h2>
+    </div>
+
+    <script>
+
+  class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+      this.txtElement = txtElement;
+      this.words = words;
+      this.txt = '';
+      this.wordIndex = 0;
+      this.wait = parseInt(wait, 10);
+      this.type();
+      this.isDeleting = false;
+    }
+
+    type() {
+      // Current index of word
+      const current = this.wordIndex % this.words.length;
+      // Get full text of current word
+      const fullTxt = this.words[current];
+
+      // Check if deleting
+      if(this.isDeleting) {
+        // Remove char
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+        // Add char
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      // Insert txt into element
+      this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+
+
+      let typeSpeed = 300;
+
+      if(this.isDeleting) {
+        typeSpeed /= 2;
+      }
+
+
+      if(!this.isDeleting && this.txt === fullTxt) {
+
+        typeSpeed = this.wait;
+
+        this.isDeleting = true;
+      } else if(this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+
+        this.wordIndex++;
+
+        typeSpeed = 500;
+      }
+
+      setTimeout(() => this.type(), typeSpeed);
+    }
+  }
+
+
+
+  document.addEventListener('DOMContentLoaded', init);
+
+
+  function init() {
+    const txtElement = document.querySelector('.txt-type');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+
+    new TypeWriter(txtElement, words, wait);
+  }
+  </script>
+  <div>
+    <footer>
+
+       <div class="container-footer-all">
+
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>More information About VITxplore</h1>
+
+                    <p>This Website is developed to help <b>VITians</b> by giving regular updates about the events and sharing useful information to <b>VITians</b>.</p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Social Networks</h1>
+
+                    <div class="row">
+                        <a href="https://www.facebook.com/"><img src="http://vitxplore.ga/facebook.png"></a>
+                        <label>Follow us on Facebook</label>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.twitter.com/"><img src="http://vitxplore.ga/twitter.png"></a>
+                        <label>Follow us on Twitter</label>
+                    </div>
+                    <div class="row">
+                        <a href="https://www.instagram.com/"><img src="http://vitxplore.ga/instagram.png"></a>
+                        <label>Follow us on Instagram</label>
+                    </div>
+                    <div class="row">
+                        <a href="https://plus.google.com"><img src="http://vitxplore.ga/google-plus.png"> </a>
+                        <label>Follow us on Google Plus</label>
+                    </div>
+                    <div class="row">
+                        <a href="https://api.whatsapp.com/send?phone=919787773988"><img src="http://vitxplore.ga/whatsapp.png"></a>
+                        <label>Message us on Whatsapp</label>
+                    </div>
+
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Information Contacts</h1>
+
+                    <div class="row2">
+                        <img src="icon/house.png">
+                        <label>VIT University,
+                        Vellore,
+                        Tamilnadu,
+                        632014.</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/smartphone.png">
+                        <label>+919154144125</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/contact.png">
+                         <label>vitxplore@gmail.com</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2019 VITxplore | <a href="vitxplore">VITxplore</a>
+                    </div>
+
+                    <div class="information">
+                        <a href="">Website Information</a> | <a href="">Privacy policy</a> | <a href="">Terms and Conditions</a>
+                    </div>
+                </div>
+
+            </div>
+
+    </footer>
+  </div>
+  </body>
+</html>

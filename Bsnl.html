@@ -1,0 +1,72 @@
+<html>
+<head>
+<title>
+BSNL
+</title>
+<style> th,td{ font-size:20px; font-family: sans-serif;
+}
+</style> <script>
+function validateform()
+{
+var x= document.forms["myform"]["grievance"]; mvali(x);
+}
+function mvali(x)
+{ var i=0; var flag=0;
+for(var i=0;i<=x.length;i++)
+{
+if(x.options[i].selected==true)
+{
+document.getElementById("outtab").rows[i+1].cells[1].innerHTML=x.options[i].value; flag=1;
+}
+}
+}
+function fun1(){ validateform();
+}
+</script>
+</head>
+<body bgcolor="#1F618D">
+<h1 align="center"> BSNL Grievance Registration</h1><br/>
+<form name="myform"  method="post">
+<table align="center" cellpadding="5" cellspacing="10" bgcolor="#1F618D">
+<tr>
+<td>Name Of Customer:</td>
+<td>
+<input type="text" name="name" required placeholder="Customer Name" required>  </td></tr>
+<tr>
+<td>Address:</td>
+<td> <textarea rows="5" columns="50" name="address" required placeholder="Address" required></textarea>  </td></tr> <tr>
+<td>Telecom Circle:</td>
+<td>
+<input type="text" name="telecome circle" required placeholder="Telecom Circle" required>  </td></tr>
+<tr>
+<td>Email.id:</td>
+<td> <input type="email" name="email" required placeholder="Email ID" required>  </td></tr>
+<tr>
+<td>Grievance nature:</td>
+<td><select name="grievance" id="slt_grievance" size="2" multiple='multiple'  >
+<option value ="no grievance" selected>None</options>
+<option value="Huge bills for limited mobile usage" >Huge bills for limited mobile usage</option>
+<option value="Roaming charges">Roaming charges </option>
+<option value="Frequent service disruption"> Frequent service disruption</option>
+</select></td></tr>
+<tr>
+<td colspan="2" align="center"> <input type="button" name="submit" value="submit" onClick="validateform()"/>  </td></tr></table>  </form>
+<center>
+<table id="outtab" border="1">
+<tr>
+<td colspan="2">Complaints</td>
+</tr>
+<tr>
+<td align="center" >0.</td><td ></td>
+</tr>
+<tr>
+<td align="center">1.</td><td></td></tr>
+<tr>
+<td align="center">2.</td><td></td></tr>
+<tr>
+<td align="center">3.</td><td></td></tr>
+</table><br/>
+<button onClick = "fun1()" >Display</button>
+<center>
+</body>
+</html>

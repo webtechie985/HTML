@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Footer Design</title>
+
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+footer{
+    width: 100%;
+    background: #202020;
+    color: white;
+
+}
+
+.container-footer-all{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+}
+
+.container-body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum1{
+    max-width: 400px;
+}
+
+.colum1 h1{
+    font-size: 22px;
+}
+
+.colum1 p{
+    font-size: 14px;
+    color: #C7C7C7;
+    margin-top: 20px;
+}
+
+.colum2{
+    max-width: 400px;
+
+}
+
+.colum2 h1{
+    font-size: 22px;
+}
+
+.row{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row img{
+    width: 36px;
+    height: 36px;
+}
+
+.row label{
+    margin-top: 10px;
+    margin-left: 20px;
+    color: #C7C7C7;
+}
+
+.colum3{
+    max-width: 400px;
+}
+
+.colum3 h1{
+    font-size: 22px;
+}
+
+.row2{
+    margin-top: 20px;
+    display: flex;
+}
+
+.row2 img{
+    width: 36px;
+    height: 36px;
+}
+
+.row2 label{
+    margin-top: 10px;
+    margin-left: 20px;
+    max-width: 140px;
+}
+
+.container-footer{
+    width: 100%;
+    background: #101010;
+}
+
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.copyright{
+    color: #C7C7C7;
+}
+
+.copyright a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.information a{
+    text-decoration: none;
+    color: #C7C7C7;
+}
+
+
+@media screen and (max-width: 1100px){
+
+    .container-body{
+        flex-wrap: wrap;
+    }
+
+    .colum1{
+        max-width: 100%;
+    }
+
+    .colum2,
+    .colum3{
+        margin-top: 40px;
+    }
+}
+*{
+margin: 0;
+padding: 0;
+font-family: "montserrat",sans-serif;
+
+}
+body
+{width:100%;margin:auto;min-width:0px;max-width:2000px;
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+background: url() no-repeat center center fixed;
+background-size: cover;
+}
+.header{
+height: 100px;
+background: #34495e;
+padding: 0 20px;
+color: #fff;
+}
+.logo{
+line-height: 100px;
+float: left;
+text-transform: uppercase;
+}
+
+.menu{
+float: right;
+line-height: 100px;
+}
+.menu a{
+color: #fff;
+text-transform: uppercase;
+text-decoration: none;
+padding: 0 10px;
+transition: 0.4s;
+}
+.show-menu-btn,.hide-menu-btn{
+transition: 0.4s;
+font-size: 30px;
+cursor: pointer;
+display: none;
+}
+.show-menu-btn{
+float: right;
+}
+.show-menu-btn i{
+line-height: 100px;
+}
+.menu a:hover,
+.show-menu-btn:hover,
+.hide-menu-btn:hover{
+color: #3498db;
+}
+
+#chk{
+position: absolute;
+visibility: hidden;
+z-index: -1111;
+}
+
+.content{
+padding: 0 00px;
+}
+
+.content p{
+text-align: justify;
+}
+
+@media screen and (max-width:800px) {
+.show-menu-btn,.hide-menu-btn{
+  display: block;
+}
+.menu{
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #333;
+  right: -100%;
+  top: 0;
+  text-align: center;
+  padding: 80px 0;
+  line-height: normal;
+  transition: 0.7s;
+}
+.menu a{
+  display: block;
+  padding: 20px;
+}
+.hide-menu-btn{
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+#chk:checked ~ .menu{
+  right: 0;
+}
+}
+tr:nth-child(even){
+background-color: #ddd;
+}
+tr:hover {
+background-color: #ddd;
+}
+table{
+width:100%;margin:auto;min-width:0px;max-width:2000px;
+  margin: 0;
+  padding: 0;
+font-family: Open Sans;}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+
+</style>
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <h2 class="logo">VIT Xplore</h2>
+    <input type="checkbox" id="chk">
+    <label for="chk" class="show-menu-btn">
+      <i class="fas fa-ellipsis-h"></i>
+    </label>
+
+    <ul class="menu">
+      <a href="#">Home</a>
+      <a href="#">Resources</a>
+      <a href="#">VIT Clubs</a>
+      <a href="#">Updates</a>
+      <a href="http://packup.ga/cs.html?i=1">Contact us</a>
+      <label for="chk" class="hide-menu-btn">
+        <i class="fas fa-times"></i>
+      </label>
+    </ul>
+  </div>
+  <div class="content">
+    </div>
+  <table>
+  <tr  bgcolor="#73C6B6" >
+  <th align="left">Club/Chapter</th><th align="center">Recruitment Details</th><th align="center">Website</th><th align="center">Facebook Page</th><th align="center">Contact Info</th>
+  </tr>
+  <tr><td >5th Pillar VIT Student Chapter</td><td  >Coming Soon</td><td  >http://fifthpillarvit.esy.es/</td><td  >https://www.facebook.com/5pvit</td><td  ></td></tr><tr class="row-3 odd"><td  >AIChE VIT Student Chapter</td><td  >12th December 2018, 5:30-7:30 pm.<br> SMV G26</td><td  >http://aichevit.wixsite.com/aichevit</td><td  >https://www.facebook.com/aichevit</td><td  >094150 32807</td></tr><tr class="row-4 even"><td  >AIESEC VIT</td><td  >Coming Soon</td><td  >www.myaiesec.in</td><td  >https://www.facebook.com/aiesec.vit</td><td  >099441 06067</td></tr><tr class="row-5 odd"><td  >American Society of Civil Engineers (ASCE)</td><td  >GDN 120 121<br> 10, 11 Dec<br> 6pm-9pm<br></td><td  >http://www.asce.org/</td><td  >https://www.facebook.com/asceVIT</td><td  >080060 00127</td></tr><tr class="row-6 even"><td  >Anokha</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/anokhavit</td><td  >9944707688</td></tr><tr class="row-7 odd"><td  >Apple Developers Group</td><td  >December 9 -14<br> http://www.adgvit.com/recruitments</td><td  >www.adgvit.com</td><td  >https://www.facebook.com/vitios/</td><td  ></td></tr><tr class="row-8 even"><td  >Association of Energy Engineers</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/aeevitchapter/</td><td  ></td></tr><tr class="row-9 odd"><td  >Ayuda NGO</td><td  >http://bit.ly/ayudaccs<br> Be there on 12th of December, 11:00 AM-1:00 PM.<br> Venues will be informed later.</td><td  >http://ayudango.org/</td><td  >https://www.facebook.com/ngoayuda/</td><td  >099424 10330</td></tr><tr class="row-10 even"><td  >Becoming I Foundation (BIF)</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/onestopvit/</td><td  ></td></tr><tr class="row-11 odd"><td  >Bulls and Bears - the finance club</td><td  >12th December, Wednesday<br> 11-1 &amp;&amp; 5-7<br> SJT601 <br></td><td  >http://bnbvit.tech</td><td  >www.facebook.com/bnbvit</td><td  >9787108507</td></tr><tr class="row-12 even"><td  >CSED</td><td  >recruit.csedvit.com</td><td  > csedvit.com</td><td  >https://www.facebook.com/csed.vit.in/</td><td  >+91 8524-011228</td></tr><tr class="row-13 odd"><td  >Computer Society of India VIT</td><td  >https://ccs.csivit.com/</td><td  >https://csivit.com/</td><td  >https://www.facebook.com/csivitu/</td><td  >+91 8949545640</td></tr><tr class="row-14 even"><td  >CodeChef-VIT</td><td  >SJT 3rd Floor Labs<br> 11:30 - 1pm<br> 12th December</td><td  >https://www.codechef.com/campus_chapter/CODECHEF-VIT</td><td  >https://www.facebook.com/codechefvituniversity/</td><td  >9023300022</td></tr><tr class="row-15 odd"><td  >Creativity Club</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/VITCreativityClub</td><td  >090039 18669</td></tr><tr class="row-16 even"><td  >Culinary CLUB VIT</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/culinaryclubvit</td><td  ></td></tr><tr class="row-17 odd"><td  >Debate Society VIT</td><td  >12-14 Dec<br> TT 334<br> 6-8PM</td><td  >www.vitdt.com</td><td  >https://www.facebook.com/vitdebsoc</td><td  ></td></tr><tr class="row-18 even"><td  >Entrepreneurship Cell - VIT</td><td  >Venue: TT-004<br> Dates: 12 and 13 December 2018<br> Time: 6:00 PM to 8:00 PM<br> <br> Register at: http://ecellvit.in/ccs<br></td><td  >http://www.ecellvit.in/</td><td  >https://www.facebook.com/ecellvit/</td><td  >087693 67369</td></tr><tr class="row-19 odd"><td  >FEPSI</td><td  >Coming Soon</td><td  >http://www.fepsiindia.in/</td><td  >https://www.facebook.com/fepsi.india</td><td  >074155 57107</td></tr><tr class="row-20 even"><td  >Developer Student Club (GDG)</td><td  >http://recruitments.dscvit.com/</td><td  >http://www.dscvitvellore.com/</td><td  >https://www.facebook.com/dscvitvellore/</td><td  ></td></tr><tr class="row-21 odd"><td  >Helphen India</td><td  >8th &amp; 9th December<br> 10 AM<br> Foodys<br> Registration Link:<br> https://goo.gl/i5cxRr</td><td  >www.helphenIndia.co.in<br></td><td  >https://www.facebook.com/helphenindia/</td><td  >+91 83087 84313</td></tr><tr class="row-22 even"><td  >Health Club (VIT)</td><td  >Venue: TT 304,305<br> Dates:<br> 11th December, 6 to 7:30 pm.<br> 12th December, 11 to 1pm.<br> http://bit.ly/HCVIT_CCS</td><td  >http://www.healthclub.tk/</td><td  >https://www.facebook.com/healthclubvit</td><td  ></td></tr><tr class="row-23 odd"><td  >Hindi Literary Association</td><td  >TT - 301, 302<br> 10th &amp; 11th Dec<br> 5:30 PM Onwards</td><td  >http://www.hlavitu.com/</td><td  >https://www.facebook.com/hla.vitu</td><td  >7530007955</td></tr><tr class="row-24 even"><td  >IEEE-Professional Communication Society</td><td  >12/12/18<br> Venue to be announced<br> https://goo.gl/forms/XRq6fOXGVkY4sdEt2</td><td  >www.facebook.com/PCSVIT</td><td  >www.facebook.com/PCSVIT</td><td  >+91 8696050506</td></tr><tr class="row-25 odd"><td  >IEEE-IAS</td><td  >Coming Soon</td><td  >https://www.facebook.com/ieeeiasvit/</td><td  > http://ias.ieee.org</td><td  >+91 99113 96674</td></tr><tr class="row-26 even"><td  >IEEE Computer Society-VIT</td><td  >Coming Soon<br> https://goo.gl/forms/KYj5xKe95v7oJAss2</td><td  >http://www.ieeecsvit.com/</td><td  >https://www.facebook.com/ieeecsvit/</td><td  >095854 19455</td></tr><tr class="row-27 odd"><td  >IEEE VIT Chapter</td><td  >https://ccs.ieeevit.com</td><td  >http://www.ieeevit.com/</td><td  >https://www.facebook.com/IEEEVIT</td><td  >098740 85445</td></tr><tr class="row-28 even"><td  >IET On Campus, VIT</td><td  >10 Dec - 5PM - SJTG08<br> 11 Dec - 5PM - SJTG08<br> 12 Dec - 11AM - TT715<br> <br> http://bit.ly/ietrecruits</td><td  >http://ietvit.com</td><td  >https://www.facebook.com/ietvit/</td><td  >9786111331<br></td></tr><tr class="row-29 odd"><td  >IEEE-Women In Engineering</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/IEEEWIEVIT</td><td  ></td></tr><tr class="row-30 even"><td  >IETE-ISF</td><td  >Round 1 details-<br> Venue: TT 201, 208<br> Date:11th December from 6 pm-7:30 pm and <br> 12th December from 11 am-1 pm and 6 pm-7:30 pm</td><td  >http://www.iete.org</td><td  >http://www.facebook.com/vitiete</td><td  >7010475723</td></tr><tr class="row-31 odd"><td  >Indian Society for Technical Education (ISTE VIT)</td><td  >December 10, 11, 12<br> Register at:<br> https://ccs.istevitu.in</td><td  >https://istevitu.in</td><td  >www.facebook.com/ISTE.VIT</td><td  >9080019737 7654214430</td></tr><tr class="row-32 even"><td  >Innovatorsquest</td><td  >12 Dec 11AM-1PM<br> 13 Dec 6PM-7:30PM</td><td  >http://iquestvit.com/</td><td  >https://www.facebook.com/InnovatorsQuest</td><td  >097900 31431</td></tr><tr class="row-33 odd"><td  >International Society of Automation</td><td  >10/12/2018 in TT413and 11/12/2018 in TT414</td><td  >ccsisavit.rf.gd</td><td  >https://www.facebook.com/isavitchapter/</td><td  >+91 9785891201</td></tr><tr class="row-34 even"><td  >ISOI VIT</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/isoivit/</td><td  ></td></tr><tr class="row-35 odd"><td  >Juvenile Care</td><td  >Coming Soon</td><td  ></td><td  ></td><td  ></td></tr><tr class="row-36 even"><td  >Kannada Literary Association KLA</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/vitu.kla</td><td  ></td></tr><tr class="row-37 odd"><td  >Make a Difference (MAD)</td><td  >http://bit.ly/MAD_RD1<br></td><td  >www.makeadiff.in</td><td  >https://facebook.com/makeadiff</td><td  >+91 96292 33835<br> +91 95002 32611</td></tr><tr class="row-38 even"><td  >KI Racing</td><td  >Coming Soon</td><td  >www.teamkiracing.com</td><td  >https://www.facebook.com/kiracing</td><td  >088230 58867</td></tr><tr class="row-39 odd"><td  >VIT LEO CLUB</td><td  >12Dec-11am-TT404<br> 13Dec-6pm-TT201<br> Reg link:<br> https://goo.gl/forms/DDadesLfSH0gzhGr1</td><td  >-</td><td  >-</td><td  >-</td></tr><tr class="row-40 even"><td  >Microsoft Student Technical Community</td><td  >Coming Soon<br> https://ccr.mstcvit.com</td><td  >http://www.mstcvit.com</td><td  >https://www.facebook.com/micvitvellore/</td><td  >9910887062</td></tr><tr class="row-41 odd"><td  >Model United Nations Society</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/MUNSocVIT/</td><td  ></td></tr><tr class="row-42 even"><td  >MUSIC CLUB -VIT</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/musicclubvit</td><td  ></td></tr><tr class="row-43 odd"><td  >Team Ojas</td><td  >2nd week of December 2018</td><td  >www.teamojas.com</td><td  >https://www.facebook.com/OjasRacing/</td><td  >9999646233</td></tr><tr class="row-44 even"><td  >Pravega Racing</td><td  >Coming Soon</td><td  >http://www.pravegaracing.com/</td><td  >https://www.facebook.com/pravegaracing/</td><td  ></td></tr><tr class="row-45 odd"><td  >roboVITics</td><td  >http://bit.ly/roboccs</td><td  >http://www.robovitics.com/</td><td  >https://www.facebook.com/robovitics/</td><td  >+91 91670 86310</td></tr><tr class="row-46 even"><td  >Rotaract at VIT</td><td  >TT 206, 207<br> December 12, 13<br> 6:00 PM - 7:30 PM<br> https://goo.gl/forms/cBQNJF6rGo5a7gF42</td><td  ></td><td  >https://www.facebook.com/RotaractVit</td><td  >099853 35555</td></tr><tr class="row-47 odd"><td  >Society for Industrial and Applied Mathematics (SIAM VIT)</td><td  >http://www.siamvit.com/ccs/</td><td  >http://www.siamvit.com</td><td  >https://www.facebook.com/SIAMVIT/</td><td  >+91 98438 96109<br></td></tr><tr class="row-48 even"><td  >Sahiti Telugu Literary Association</td><td  >Coming Soon</td><td  >http://sahititla.com/</td><td  >https://www.facebook.com/sahiti.vit/</td><td  >080742 71436</td></tr><tr class="row-49 odd"><td  >Tamil Literary Association</td><td  >Coming Soon</td><td  ></td><td  >https://facebook.com/vitu.tla</td><td  >96297 69334</td></tr><tr class="row-50 even"><td  >TAG Club</td><td  >Coming Soon</td><td  >http://tagclub.in/</td><td  >https://www.facebook.com/tagvitu</td><td  >097905 38548</td></tr><tr class="row-51 odd"><td  >Team Albatross</td><td  >https://tinyurl.com/Teamalbatrossform</td><td  >http://www.teamalbatross.in/</td><td  >facebook.com/talbatross</td><td  >7530003551</td></tr><tr class="row-52 even"><td  >Team Kshatriya</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/Team.Kshatriya/</td><td  ></td></tr><tr class="row-53 odd"><td  >Team Eklavya</td><td  >Coming Soon</td><td  >http://www.teameklavya.com/</td><td  >https://www.facebook.com/eklavyateam/</td><td  >094262 55832</td></tr><tr class="row-54 even"><td  >Team Uttejit</td><td  >Date : 11th to 13th Dec<br> Time: 6-7:30 pm<br> Venue: MB 103, 203</td><td  ></td><td  >Formula student Team Uttejit</td><td  >7697033033</td></tr><tr class="row-55 odd"><td  >Team Jaabaz</td><td  >Coming Soon</td><td  >http://www.teamjaabaz.com/</td><td  >https://www.facebook.com/teamjaabaz/</td><td  ></td></tr><tr class="row-56 even"><td  >TEDxVITVellore</td><td  >Coming Soon</td><td  >http://www.tedxvitvellore.com/</td><td  >https://www.facebook.com/Tedxvitvellore/</td><td  >077081 56694</td></tr><tr class="row-57 odd"><td  >The Electronics Club of VIT</td><td  >Slot 1 : 11th Dec 6-7:30pm<br> Slot 2 : 12th Dec 11am-1pm<br> Venue : TT-204,205</td><td  >http://tecvit.co.in</td><td  >https://www.facebook.com/tec.vit</td><td  >Aman 9097513482<br> Bhavana 7019123945</td></tr><tr class="row-58 even"><td  >The Fine Arts Club</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/thefineartsclubvit</td><td  >8017753914 / 9003744179</td></tr><tr class="row-59 odd"><td  >The Hindu Education Plus Club-VIT</td><td  >Coming Soon</td><td  >http://www.thepcvit.com/</td><td  >https://www.facebook.com/vitthehindueplusclub/</td><td  ></td></tr><tr class="row-60 even"><td  >The Photography Club</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/thephotographyclubvit/</td><td  >090037 25285</td></tr><tr class="row-61 odd"><td  >Toastmasters International</td><td  >Coming Soon</td><td  >http://www.toastmastersvit.com/</td><td  >https://www.facebook.com/toastmastersvit</td><td  ></td></tr><tr class="row-62 even"><td  >Uddeshya VIT Vellore</td><td  >Coming Soon</td><td  >http://www.uddeshyaindia.org/</td><td  >https://www.facebook.com/VIT.Uddeshya</td><td  ></td></tr><tr class="row-63 odd"><td  >Venturesity VIT</td><td  >Coming Soon</td><td  >www.venturesity.com</td><td  >https://www.facebook.com/venturesity.vit/</td><td  ></td></tr><tr class="row-64 even"><td  >VIT Community Radio 90.8 fm</td><td  >bit.ly/teamspeakvit</td><td  >http://www.vit.ac.in/about/communityradio</td><td  >https://m.facebook.com/vitcommunityradio/</td><td  >0416-2202882<br> 0416-2202882</td></tr><tr class="row-65 odd"><td  >VinnovateIT</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/VinnovateIT/</td><td  >088708 55940</td></tr><tr class="row-66 even"><td  >Visual Bloggers Club</td><td  >Coming Soon</td><td  >https://www.vbcvit.com/</td><td  >https://www.facebook.com/vbcvit/</td><td  ></td></tr><tr class="row-67 odd"><td  >Animation Club VIT</td><td  >Recruitment Form:<br> https://goo.gl/forms/kyCL9TW5a0bc4bH13</td><td  ></td><td  >https://www.facebook.com/vitanimationclub</td><td  ></td></tr><tr class="row-68 even"><td  >Dance Club VIT</td><td  >Coming Soon</td><td  >http://www.vitdanceclub.com/</td><td  >https://www.facebook.com/VITDance</td><td  >099445 96961</td></tr><tr class="row-69 odd"><td  >Dramatics Club VIT</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/VitDramaClub</td><td  ></td></tr><tr class="row-70 even"><td  >English Literary Association VIT</td><td  >Coming Soon</td><td  ></td><td  >https://www.facebook.com/vitenglishliteraryassociation/</td><td  ></td></tr><tr class="row-71 odd"><td  >VIT FILM Society</td><td  >Coming Soon</td><td  >https://vfsfilmisthan.wordpress.com/</td><td  >https://www.facebook.com/VITFilmSociety</td><td  ></td></tr><tr class="row-72 even"><td  >Spartans VIT</td><td  >December 11, 12, 13<br> 5:00 - 7:30 PM<br> TT 104<br> https://bit.ly/2G4gEwB</td><td  ></td><td  >https://www.facebook.com/vitspartans</td><td  ></td></tr><tr class="row-73 odd"><td  >Trekking Club VIT</td><td  >Coming Soon</td><td  >http://www.vittrekkingclub.co.in/</td><td  >https://www.facebook.com/VitTrekkingClub</td><td  ></td></tr><tr class="row-74 even"><td  >Youth Red Cross VIT</td><td  >http://bit.ly/yrc2019</td><td  >http://yrcvit.com/</td><td  >https://www.facebook.com/YouthRedCrossVit</td><td  >+91 7530005800</td></tr></table>
+
+    <footer>
+
+       <div class="container-footer-all">
+
+            <div class="container-body">
+
+                <div class="colum1">
+                    <h1>More information About VITxplore</h1>
+
+                    <p>This Website is developed to help <b>VITians</b> by giving regular updates about the events and sharing useful information to <b>VITians</b>.</p>
+
+                </div>
+
+                <div class="colum2">
+
+                    <h1>Social Networks</h1>
+
+                    <div class="row">
+                        <a href="https://www.facebook.com/"><img src="icon/facebook.png"></a>
+                        <label>Follow us on Facebook</label>
+                    </div>
+                    <div class="row">
+                        <img src="icon/twitter.png">
+                        <label>Follow us on Twitter</label>
+                    </div>
+                    <div class="row">
+                        <img src="icon/instagram.png">
+                        <label>Follow us on Instagram</label>
+                    </div>
+                    <div class="row">
+                        <img src="icon/google-plus.png">
+                        <label>Follow us on Google Plus</label>
+                    </div>
+                    <div class="row">
+                        <img src="icon/whatsapp.png">
+                        <label>Message us on Whatsapp</label>
+                    </div>
+
+
+                </div>
+
+                <div class="colum3">
+
+                    <h1>Information Contacts</h1>
+
+                    <div class="row2">
+                        <img src="icon/house.png">
+                        <label>VIT University,
+                        Vellore,
+                        Tamilnadu,
+                        632014.</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/smartphone.png">
+                        <label>+919154144125</label>
+                    </div>
+
+                    <div class="row2">
+                        <img src="icon/contact.png">
+                         <label>vitxplore@gmail.com</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="container-footer">
+               <div class="footer">
+                    <div class="copyright">
+                        © 2019 VITxplore | <a href="vitxplore">VITxplore</a>
+                    </div>
+
+                    <div class="information">
+                        <a href="">Website Information</a> | <a href="">Privacy policy</a> | <a href="">Terms and Conditions</a>
+                    </div>
+                </div>
+
+            </div>
+
+    </footer>
+
+</body>
+</html>
